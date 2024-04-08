@@ -1,0 +1,80 @@
+
+    <form action="#">
+        <fieldset>
+            <legend>Add Employee</legend>
+            <div class="user-data-container">
+           <div class="user-detaills">
+            <input type="text" name="first-name" id="first-name" placeholder="first name" required>
+            <br>
+            <input type="text" name="last-name" id="last-name" placeholder="last  name" required>
+            <br>
+            <input type="tel" name="phone-number" id="phone-number" placeholder="phone number" required>
+            <br>
+            <label for="contract">contract :</label>
+            <select name="contract" id="contract" required>
+             <option value="cdi">CDI</option>
+             <option value="cdd">CDD</option>
+             <option value="anapec">anapec</option>
+            </select>
+            <br>
+            <label for="image" class="image-label">upload image</label>
+            <input type="file" id="image">
+          </div>
+          <div class="user-job-detaills">
+            <label for="atelier">atelier :</label> 
+            <select name="atelier" id="atelier" required>
+             <option value="Content Creation">Content Creation</option>
+             <option value="Sales Training">Sales Training</option>
+             <option value="Digital Marketing">Digital Marketing</option>
+             <option value="Audit And Assurance">Audit And Assurance</option>
+             <option value="Accounting Standards">Accounting Standards</option>
+             <option value="Forensic Accounting">Forensic Accounting</option>
+             <option value="Employee Relations">Employee Relations</option>
+             <option value="Performance Management">Performance Management</option>
+             <option value="HR Analytics">HR Analytics</option>
+             <option value="Software Development">Software Development</option>
+             <option value="Data Science And Analytics">Data Science And Analytics</option>
+             <option value="Cloud Computing">Cloud Computing</option>
+             <option value="Logistics Optimization">Logistics Optimization</option>
+             <option value="Supply Chain Analytics">Supply Chain Analytics</option>
+             <option value="Sustainable Supply Chain">Sustainable Supply Chain</option>
+             <option value="Multi-Channel Support">Multi-Channel Support</option>
+             <option value="Customer Experience Design">Customer Experience Design</option>
+             <option value="Complaint Handling">Complaint Handling</option>
+            </select>
+            <br>
+            <label for="departement" class="dep">Departement :</label>
+            <select name="Departement"  class="dep" id="departement" required="">
+               <option value="sales or marketing">sales or marketing</option>
+               <option value="Finance And Accounting">Finance And Accounting</option>
+               <option value="HR(Human Ressource)">HR(Human Ressource)</option>
+               <option value="IT(Information Technology)">IT(Information Technology)</option>
+               <option value="Supply Chain Management">Supply Chain Management</option>
+               <option value="Forensic Accounting">Customer Service</option>
+              </select>
+            <br class="dep">
+            <label for="Chef" class="chef-label">Chef :</label>
+            <select name="chefs" id="chef" required>
+             <option value="a">a</option>
+             <option value="b">b</option>
+             <option value="c">c</option>
+             <option value="d">d</option>
+            </select>
+            <input type="text" name="post" id="post" placeholder="post"  required>
+            <br>
+            <label for="start-date">start date :</label>
+            <input type="date" name="start-date" id="start-date" required>
+            <br>
+            <label for="salary">salary :</label>
+            <input type="text" name="salary" id="salary" placeholder="$$$$" required>
+          </div>
+        </div>
+          <button type="submit" id="submit-btn"><a>add</a></button>
+          <button type="button" id="cancel-btn"><a>cancel</a></button>
+        </fieldset>
+    </form>
+<script src="/js/adEemployeepage.js"></script>
+<script src="/js/addChefPage.js"></script>
+<script src="/js/addDirectorPage.js"></script>
+
+

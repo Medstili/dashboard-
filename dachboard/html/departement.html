@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atelier</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="/css/dashboard.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+</head>
+<body>
+
+    <!-- sidebar -->
+    <aside class="sidebar">
+        <div class="logo"></div>
+        <ul class="menu">
+          <li><a href="/html/dashboard.html"><i class="fa a-sharp fa-solid fa-eye"></i><span>overview</span></a></li>
+          <li><a href="/html/employers.html"><i class="fa fa-solid fa-users"></i><span>employers</span></a></li>
+          <li><a href="/html/director.html"><i class="fa fa-regular fa-building-user"></i><span>directors</span></a></li>
+          <li><a href="/html/chef.html"><i class="fa fa-solid fa-user-tie"></i><span>chefs</span></a></li>
+          <li><a href="/html/departement.html"><i class="fa fa-regular fa-pen-ruler"></i><span>departement</span></a></li>
+          <li><a href=""><i class="fa fa-sign-out"></i><span>log out</span></a></li>
+        </ul>
+    </aside>
+    <div class="container">
+    <header class="header-container">
+        <div class="title">
+            <span class="span-1">primary</span>
+            <h2>dashbaord</h2>
+        </div>
+        <div class="search-logo">
+        <div class="search-bar">
+            <label for="search"><i class="fa fa-solid fa-search"></i></label>
+            <input type="search" name="search" id="search" placeholder="search">
+        </div>
+        <img src="/images/logo.png" alt="" class="" width="50px" height="50px">
+        </div>
+    </header>
+
+    <div class="add-section">
+      <p>about departement</p>
+      <!-- <button id="add-button"><a href="addPage.html" target="_blank"><i class="fa-solid fa-plus"></i>add employee</a></button> -->
+  </div>
+
+<table class="atelier-table">
+  <thead>
+    <tr>
+      <th id="first-td-left">Departement</th>
+      <th>Dep director</th>
+      <th>Atelier</th>
+      <th>Chef atelier</th>
+      <th id="first-td-right">Employers number</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr id="dep-dir">
+      <td rowspan="3">Sales or marketing</td>
+      <td rowspan="3">Mr.Rachid</td>
+
+      <td>Content Creation </td>
+      <td>Mr.A</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>Sales Training</td>
+      <td>Mr.B</td>
+
+      <td>30</td>
+    </tr>
+
+    <tr>
+      <td>Digital Marketing</td>
+      <td>Mr.C</td>
+
+      <td>20</td>
+    </tr>
+    <tr id="dep-dir">
+      <td  rowspan="3">finance and accounting</td>
+      <td rowspan="3">Mr.Mohamed</td>
+      <td>Audit and Assurance</td>
+      <td>Mr.D</td>
+
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Accounting Standards </td>
+      <td>Mr.E</td>
+
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Forensic Accounting</td>
+      <td>Mr.F</td>
+
+      <td>10</td>
+    </tr>
+    <tr id="dep-dir">
+      <td rowspan="3">HR(human ressource)</td>
+      <td rowspan="3">Mrs.Fatima</td>
+      <td>Employee Relations</td>
+      <td>Mr.t</td>
+
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Performance Management</td>
+      <td>Mr.u</td>
+
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>HR Analytics </td>
+      <td>Mr.p</td>
+
+      <td >9</td>
+    </tr>
+    <tr id="dep-dir">
+      <td rowspan="3">IT(information technology)</td>
+      <td rowspan="3">Mr.Ahmed</td>
+      <td>Software Development</td>
+      <td>Mr.R</td>
+
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Data Science and Analytics</td>
+      <td>Mr.W</td>
+
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Cloud Computing </td>
+      <td>Mr.s</td>
+
+      <td>9</td>
+    </tr>
+    <tr id="dep-dir">
+      <td rowspan="3">Supply chain management</td>
+      <td rowspan="3">Mr.Yasin</td>
+      <td>Logistics Optimization</td>
+      <td>Mr.y</td>
+
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Supply Chain Analytics</td>
+      <td>Mr.e</td>
+
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Sustainable Supply Chain</td>
+      <td>Mr.f</td>
+
+      <td>9</td>
+    </tr>
+
+    <tr id="dep-dir">
+      <td id="last-td" rowspan="3">Customer service</td>
+      <td id="last-td"rowspan="3">Mrs.youssra</td>
+
+      <td>Multi-channel Support</td>
+      <td>Mr.l</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Customer Experience Design</td>
+      <td>Mr.e</td>
+
+      <td>50</td>
+    </tr>
+    <tr>
+      <td id="last-td">Complaint Handling </td>
+      <td id="last-td">Mr.Q</td>
+
+      <td id="last-td">9</td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+</body>
+</html>

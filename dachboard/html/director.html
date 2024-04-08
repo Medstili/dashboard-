@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dachboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="/css/dashboard.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+</head>
+<body>
+        <!-- add page here -->
+        <div id="add-page-container"><div class="add-page-box"></div></div>
+    <!-- sidebar -->
+    <aside class="sidebar">
+        <div class="logo"></div>
+        <ul class="menu">
+            <li><a href="/html/dashboard.html"><i class="fa a-sharp fa-solid fa-eye"></i><span>overview</span></a></li>
+            <li><a href="/html/employers.html"><i class="fa fa-solid fa-users"></i><span>employers</span></a></li>
+            <li><a href="/html/director.html"><i class="fa fa-regular fa-building-user"></i><span>directors</span></a></li>
+            <li><a href="/html/chef.html"><i class="fa fa-solid fa-user-tie"></i><span>chefs</span></a></li>
+            <li><a href="/html/departement.html"><i class="fa fa-regular fa-pen-ruler"></i><span>departement</span></a></li>
+            <li><a href=""><i class="fa fa-sign-out"></i><span>log out</span></a></li>
+        </ul>
+    </aside>
+<!-- main section -->
+    <div class="container">
+        <!-- header / serachbar -->
+        <header class="header-container">
+            <div class="title">
+                <span class="span-1">primary</span>
+                <h2>dashbaord</h2>
+            </div>
+            <div class="search-logo">
+            <div class="search-bar">
+                <label for="search"><i class="fa fa-solid fa-search"></i></label>
+                <input type="search" name="search" id="search" placeholder="search">
+            </div>
+            <img src="/images/logo.png" alt="" class="" width="50px" height="50px">
+            </div>
+        </header>
+        <!-- add section -->
+            <div class="add-section">
+            <h1 class="directors-info">Directors info</h1>
+            <button id="add-button" class="director-btn" ><a href="" ><i class="fa-solid fa-plus"></i>add director</a></button>
+            </div>
+
+        <table class="directors-table">
+            <thead>
+                <tr>
+                    <th id="ref">ref</th>
+                    <th>img</th>
+                    <th>name</th>
+                    <th>date</th>
+                    <th>Department</th>
+                    <th>$</th>
+                    <th class="menu_delete_btn" id="th-del">deleted</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><img src="/images/employee-picture.jpg" alt="" class="img_profil"></td>
+                    <td >Mr. Rachid Ajboun</td>
+                    <td>02/03/2011</td>
+                    <td>Executive Management</td>
+                    <td>3000$</td>    
+                    <td>
+                        <button class="del-button"><i class="fa-solid fa-trash-can"></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><img src="/images/employee-picture.jpg" alt="" class="img_profil"></td>
+                    <td >Mr. Rachid Ajboun</td>
+                    <td>11/03/2013</td>
+                    <td>Executive Leadership</td>
+                    <td>3400$</td>    
+                    <td>
+                        <button class="del-button"><i class="fa-solid fa-trash-can"></i></button>
+                    </td>
+                </tr>
+                <tr> 
+                    <td>3</td>
+                    <td><img src="/images/employee-picture.jpg" alt="" class="img_profil"></td>
+                    <td >Mr. Rachid Ajboun</td>
+                    <td>11/06/2016</td>
+                    <td>Product Development</td>
+                    <td>4400$</td>    
+                    <td>
+                        <button class="del-button"><i class="fa-solid fa-trash-can"></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><img src="/images/employee-picture.jpg" alt="" class="img_profil"></td>
+                    <td >Mr. Rachid Ajboun</td>
+                    <td>11/06/2019</td>
+                    <td>Agency Leadership</td>
+                    <td>4900$</td>    
+                    <td>
+                        <button class="del-button"><i class="fa-solid fa-trash-can"></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><img src="/images/employee-picture.jpg" alt="" class="img_profil"></td>
+                    <td >Mr. Rachid Ajboun</td>
+                    <td>10/06/2022</td>
+                    <td>Administration</td>
+                    <td>5900$</td>    
+                    <td>
+                        <button class="del-button"><i class="fa-solid fa-trash-can"></i></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="/js/addDirectorPage.js"></script>
+</body>
+</html>

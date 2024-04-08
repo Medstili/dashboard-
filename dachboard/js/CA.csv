@@ -1,0 +1,14 @@
+﻿year,industry_code_ANZSIC,industry_name_ANZSIC,rme_size_grp,variable,value,unit
+2011,A,Agriculture Forestry and Fishing,b_1-5,Activity unit,21777,COUNT
+2012,A,Agriculture Forestry and Fishing,a_0,Fixed tangible assets,32155,DOLLARS(millions)
+2013,A,Agriculture Forestry and Fishing,b_1-5,Rolling mean employees,38136,COUNT
+2014,A,Agriculture Forestry and Fishing",a_0,Activity unit,46134,COUNT
+2015,A,Agriculture Forestry and Fishing",a_0,Total assets,55700,DOLLARS(millions)
+2016,D,Electricity Gas, Water and Waste Services,h_200+,45146,DOLLARS(millions)
+2017,A,Agriculture Forestry and Fishing",i_Industry_Total,Fixed tangible assets,76626,DOLLARS(millions)
+2018,A,Manufacturing,i_Industry_Total,"Sales government funding grants and subsidies",94944,DOLLARS(millions)
+2019,F,Wholesale Trade,i_Industry_Total,Total income,78040,DOLLARS(millions)
+2020,A,Agriculture, Forestry and Fishing,i_Industry_Total,133625,DOLLARS(millions)
+2021,C,Manufacturing,i_Industry_Total,Rolling mean employees,221694,COUNT
+2022,A,Agriculture, Forestry and Fishing,c_6-9,250000,COUNT
+2023,A,Agriculture, Forestry and Fishing,c_6-9,200500,DOLLARS(millions)
